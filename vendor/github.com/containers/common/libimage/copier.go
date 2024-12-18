@@ -24,7 +24,7 @@ import (
 )
 
 const (
-	defaultMaxRetries = 3
+	defaultMaxRetries = 0
 	defaultRetryDelay = time.Second
 )
 
