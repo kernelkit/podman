@@ -1318,6 +1318,8 @@ func (r *ConmonOCIRuntime) sharedConmonArgs(ctr *Container, cuuid, bundlePath, p
 	switch logDriver {
 	case define.JournaldLogging:
 		logDriverArg = define.JournaldLogging
+	case define.SyslogLogging:
+		logDriverArg = define.SyslogLogging
 	case define.NoLogging:
 		logDriverArg = define.NoLogging
 	case define.PassthroughLogging:

@@ -28,7 +28,7 @@ const (
 )
 
 func init() {
-	logDrivers = append(logDrivers, define.JournaldLogging)
+	logDrivers = append(logDrivers, define.JournaldLogging, define.SyslogLogging)
 }
 
 func (c *Container) readFromJournal(ctx context.Context, options *logs.LogOptions,

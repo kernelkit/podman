@@ -82,6 +82,9 @@ const NoLogging = "none"
 // PassthroughLogging is the string conmon expects when specifying to use the passthrough driver
 const PassthroughLogging = "passthrough"
 
+// SyslogLogging is the string conmon expects when specifying to use the syslog driver
+const SyslogLogging = "syslog"
+
 // DefaultRlimitValue is the value set by default for nofile and nproc
 const RLimitDefaultValue = uint64(1048576)
 

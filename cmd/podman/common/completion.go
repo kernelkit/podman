@@ -957,7 +957,7 @@ func AutocompleteImageVolume(cmd *cobra.Command, args []string, toComplete strin
 // -> "journald", "none", "k8s-file", "passthrough"
 func AutocompleteLogDriver(cmd *cobra.Command, args []string, toComplete string) ([]string, cobra.ShellCompDirective) {
 	// don't show json-file
-	logDrivers := []string{define.JournaldLogging, define.NoLogging, define.KubernetesLogging}
+	logDrivers := []string{define.JournaldLogging, define.NoLogging, define.KubernetesLogging, define.SyslogLogging}
 	if !registry.IsRemote() {
 		logDrivers = append(logDrivers, define.PassthroughLogging)
 	}
